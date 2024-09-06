@@ -1,18 +1,6 @@
-# Data Science Guide
+# 🚀 Data Science Guide
 
 ![banner-jpg](https://media.licdn.com/dms/image/v2/C4D12AQGD_su1k14bYA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1583217311227?e=1730937600&v=beta&t=YU3EonQeRdE6dP65jUpILWMI9zh_A7yzclshVgbroSM)
-
-## Table Of Contents
-1. [Data Science Roadmap](#-data-science-roadmap)
-2. Python Guide (Only for Data science)
-3. Numpy
-4. Pandas
-
-
-
-# 🚀 Data Science Roadmap
-
----
 
 ## 1. 🐍 Python Basics
 - 📝 **Variables, Numbers, Strings**
