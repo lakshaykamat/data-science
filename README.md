@@ -20,14 +20,14 @@
 ---
 
 ## 2. 📊 Numpy, Pandas, and Data Visualization
-### 1. 🔢 **Numpy**: Essential for working with arrays and matrices!
+### [1. 🔢 Numpy: Essential for working with arrays and matrices!](https://github.com/lakshaykamat/data-science/tree/main/python/numpy)
 - Fast numerical calculations.
 - Handle large datasets easily.
 #### 📚 Helpful Videos & Courses:
 1. [Numpy - freeCodeCamp](https://youtu.be/QUT1VHiLmmI?si=J9Vz8IzKNz43Xr2E)
 2. [Numpy - CodeWithHarry](https://youtu.be/Rbh1rieb3zc?si=5tEWXU38NyRqbHua)
 
-### 2. 🐼 **Pandas**: Data manipulation made simple!
+### [2. 🐼 Pandas: Data manipulation made simple!](https://github.com/lakshaykamat/data-science/tree/main/python/pandas)
 - Great for cleaning, filtering, and transforming data.
 #### 📚 Helpful Videos & Courses:
 1. [Pandas - CodeWithHarry](https://youtu.be/RhEjmHeDNoA?si=tVezmgwDKrYqPmO6)
