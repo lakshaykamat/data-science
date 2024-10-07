@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Home Price Prediction</title>
+    
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Your Custom JS -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Container -->
+    <div class="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+        
+        <!-- Title -->
+        <h1 class="text-3xl font-semibold text-center text-gray-800 mb-8">
+            Bangalore Home Price Prediction
+        </h1>
+
+        <!-- Area Input -->
+        <div class="mb-6">
+            <h2 class="text-lg font-medium text-gray-700">Area (Square Feet)</h2>
+            <input id="uiSqft" type="text" name="Squareft" value="1000" 
+                   class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <!-- BHK Selection -->
+        <div class="mb-6">
+            <h2 class="text-lg font-medium text-gray-700">BHK</h2>
+            <div class="flex space-x-4 mt-2">
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBHK" value="1" class="form-radio">
+                    <span class="ml-2">1</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBHK" value="2" class="form-radio" checked>
+                    <span class="ml-2">2</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBHK" value="3" class="form-radio">
+                    <span class="ml-2">3</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBHK" value="4" class="form-radio">
+                    <span class="ml-2">4</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBHK" value="5" class="form-radio">
+                    <span class="ml-2">5</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Bathrooms Selection -->
+        <div class="mb-6">
+            <h2 class="text-lg font-medium text-gray-700">Bath</h2>
+            <div class="flex space-x-4 mt-2">
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBathrooms" value="1" class="form-radio">
+                    <span class="ml-2">1</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBathrooms" value="2" class="form-radio" checked>
+                    <span class="ml-2">2</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBathrooms" value="3" class="form-radio">
+                    <span class="ml-2">3</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBathrooms" value="4" class="form-radio">
+                    <span class="ml-2">4</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="uiBathrooms" value="5" class="form-radio">
+                    <span class="ml-2">5</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Location Selection -->
+        <div class="mb-6">
+            <h2 class="text-lg font-medium text-gray-700">Location</h2>
+            <select id="uiLocations" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <option disabled selected>Choose a Location</option>
+                <option>Electronic City</option>
+                <option>Rajaji Nagar</option>
+                <!-- Add more locations as needed -->
+            </select>
+        </div>
+
+        <!-- Estimate Price Button -->
+        <div class="text-center">
+            <button onclick="onClickedEstimatePrice()" class="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 focus:outline-none">
+                Estimate Price
+            </button>
+        </div>
+
+        <!-- Result -->
+        <div id="uiEstimatedPrice" class="mt-6 text-center text-2xl font-semibold text-gray-700">
+            <h2></h2>
+        </div>
+        
+    </div>
+
+</body>
+</html>
